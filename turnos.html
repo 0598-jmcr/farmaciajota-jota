@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turnos</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo_turnosSolicitados.css">
+    <script src="https://kit.fontawesome.com/721b8f7618.js" crossorigin="anonymous"></script>
+
+    
+</head>
+<body>
+
+    <header class="header">
+        <div class="contenedor">
+            <h1 class="logo">Farmacia Jota-Jota</h1>
+            <i class="fas fa-bars" id="btn-button"></i>
+            <nav class="nav" id="nav">
+                <ul class="menu">
+                    <li class="menu__item"><a class="menu__link" style="text-decoration:none" href="inicioadministrador.html" >Inicio</a></li>
+                    <li class="menu__item"><a class="menu__link select" style="text-decoration:none" href="control.html">Control</a></li>
+                    <li class="menu__item"><a class="menu__link" style="text-decoration:none" href="acercaDeNosotros3.html">Acerca de Nosotros</a></li>
+                    <li class="menu__item"><a class="menu__link" style="text-decoration:none" href="inicioprincipal.html">Cerrar Sesión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="breadcrumb">
+        <div class="container">
+          <ol class="breadcrumb">
+            <li><a href="control.html">Panel de Control</a></li>
+            <li class="active">Turnos Solicitados</li>
+          </ol>
+        </div>
+      </section>
+  
+      <section id="main">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="list-group">
+                <a href="control.html" class="list-group-item active color-principal">
+                  <span class="fas fa-columns" aria-hidden="true"></span> Panel de Control
+                </a>
+                
+                <a href="#" class="list-group-item"><span class="fas fa-pen-square" aria-hidden="true"></span> Turnos Solicitados<span class="badge">2</span></a>
+                
+              </div>
+  
+             
+            </div>
+            <div class="col-md-9">
+              
+              <div class="panel panel-default">
+                <div class="panel-heading main-color-bg">
+                  <h3 class="panel-title">Turnos Solicitados</h3>
+                </div>
+                <div class="panel-body">
+                  <div class="row">
+                        <div class="col-md-12">
+                            <input class="form-control" type="hidden" placeholder="Filtrar entradas..." >
+                        </div>
+                  </div>
+                  <br>
+                  <table class="table table-striped table-hover">
+                        <tr>
+                          <th>Nombres</th>
+                          <th>Fecha</th>
+                          <th>Hora</th>
+                          <th>Servicio</th>
+                          <th></th>
+                        </tr>
+                        <tr id="ocultar">
+                          <td>Josué Cobos<img src="icon/check.svg" id="mostrar1" width="15px" style="display: none;"></td>
+                          
+                          <td>Enero 05, 2021</td>
+                          <td>10:00AM</td>
+                          <td>Medicina General</td>
+                          <td><button class="btn btn-default" href="#" onclick="cimg1();">Aprobar</button> <button class="btn btn-danger" href="#" onclick="cimg5();">Rechazar</button></td> 
+                        </tr>
+                        <tr id="oculta">
+                          <td>Jonathan Mero<img src="icon/check.svg" id="mostrar2" width="15px" style="display: none;" ></td>
+                          
+                          <td>Enero 06, 2020</td>
+                          <td>13:00PM</td>
+                          <td>Productos</td>
+                          <td><button class="btn btn-default" href="#" onclick="cimg2();">Aprobar</button> <button class="btn btn-danger" href="#" onclick="cimg6();">Rechazar</button> </td>
+                        </tr>
+                      </table>
+                </div>
+                </div>
+  
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <script src="js/menu.js"></script>
+      <script src="js/turnosaceptadoscancelados.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+    
+</body>
+</html>
